@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import styles from '../../styles';
 import { staggerContainer } from '../../utils/motion';
-import Land from './land';
+import Land from './Land';
 import Oriental from './Oriental';
 
 const Prints = () => {
