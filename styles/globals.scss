@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@layer {
+  body {
+    @apply bg-black;
+    @apply text-grey;
+  }
+}
+
+a {
+  transition: 0.3s ease;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.poop__text {
+  @apply text-poop hover:text-[#333333];
+}
+
+.footer__icon {
+  @apply hover:text-vivid text-[20px];
+  transition: 0.3s ease;
+}
+
+img {
+  aspect-ratio: 1 / 1;
+}
+
+// @media (max-width: '1200px') {
+//   img {
+//     aspect-ratio: 16/ 9;
+//   }
+// }
