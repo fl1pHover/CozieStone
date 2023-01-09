@@ -14,7 +14,7 @@ module.exports = {
         'primary-black': '#100D0D',
         white: '#ffffff',
         grey: '#a3a3a3',
-        vivid: '#cf2e2e',
+        vivid: '#FF0000',
         dimGrey: '#777777',
         poop: '#aa8c46',
       },
