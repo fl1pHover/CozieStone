@@ -3,12 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import { fadeIn } from '../../utils/motion';
 
-const printImages = [
-  { image: '1.png', id: 1, header: 'Gazriin ner', date: 2022 },
-  { image: '2.png', id: 2, header: 'Gazriin ner', date: 2022 },
-  { image: '3.png', id: 3, header: 'Gazriin ner', date: 2022 },
-  { image: '4.png', id: 4, header: 'Gazriin ner', date: 2022 },
-];
+import { printImages } from '../../constant';
 
 const Oriental = () => {
   return (
@@ -22,7 +17,7 @@ const Oriental = () => {
             <img
               src={'/images/oriental/' + printImage.image}
               {...printImage}
-              alt="image "
+              alt="image"
               className="aspect-[3/4] w-full h-full"
             />
             <h2 className="uppercase mt-3">

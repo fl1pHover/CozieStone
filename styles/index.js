@@ -9,7 +9,7 @@ const styles = {
   bottomPaddings: 'sm:pb-16 xs:pb-8 pb-12',
 
   flexCenter: 'flex justify-center items-center',
-  flexStart: 'flex justify-start items-start',
+flexStart: 'flex justify-start items-start',
   flexBetween: 'flex justify-between w-full',
   flexEnd: 'flex justify-end',
   navPadding: 'pt-[50px]',
@@ -17,7 +17,7 @@ const styles = {
     'absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]',
   // hero section
   heroHeading:
-    'font-bold lg:text-[72px] md:text-[60px] sm:text-[40px] text-[32px] lg:leading-[80px] md:leading-[60px] sm:leading-[50px] leading-[40px]',
+    'font-bold lg:text-[64px] md:text-[55px] sm:text-[40px] text-[32px] lg:leading-[80px] md:leading-[60px] sm:leading-[50px] leading-[40px]',
   mainHeading:
     'font-bold lg:text-[32px] md:text-[30px] sm:text-[22px] text-[22px] lg:leading-[80px] md:leading-[60px] sm:leading-[50px] leading-[40px]',
   heroDText:

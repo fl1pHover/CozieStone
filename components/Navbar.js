@@ -40,20 +40,20 @@ const Navbar = () => {
         initial="hidden"
         animate="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.flexCenter} mt-5`}
+        className={`${styles.flexCenter} mt-3`}
       >
-        {navItems.map((navItem, index) => (
+        {navItems?.map((navItem, index) => (
           <Link
             key={index}
             variants={fadeIn('left', 'Tween', index * 0.2)}
             // animate={{ x: 100 }}
             // transition={{ type: 'spring', stiffness: 100 }}
             href={navItem.href}
-            className={
+            className={`${
               asPath === navItem.href
                 ? 'active text-vivid'
-                : `${styles.hoverRed} text-dimGrey px-[15px]`
-            }
+                : `${styles.hoverRed} text-dimGrey`
+            } px-[15px]`}
           >
             {navItem.item}
           </Link>

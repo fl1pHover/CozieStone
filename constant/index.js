@@ -1,6 +1,6 @@
 export const navItems = [
   {
-    item: 'Home',
+    item: 'Color',
     href: '/',
   },
   {
@@ -19,6 +19,13 @@ export const navItems = [
     item: 'contact',
     href: 'contact',
   },
+];
+
+export const printImages = [
+  { image: '1.png', id: 1, header: 'Gazriin ner', date: 2022 },
+  { image: '2.png', id: 2, header: 'Gazriin ner', date: 2022 },
+  { image: '3.png', id: 3, header: 'Gazriin ner', date: 2022 },
+  { image: '4.png', id: 4, header: 'Gazriin ner', date: 2022 },
 ];
 
 export const videoImages = [
