@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import React from 'react';
 import { videoImages } from '../../constant';
 import styles from '../../styles';
@@ -22,36 +23,36 @@ const Product = () => {
         </h2>
         <p>
           Written and Narration by{' '}
-          <a href="" className={`${styles.hoverRed}`}>
+          <Link href="/" className={`${styles.hoverRed}`}>
             @magnolianmusic
-          </a>
+          </Link>
         </p>
         <p>
           DOP{' '}
-          <a href="" className={`${styles.hoverRed}`}>
+          <Link href="" className={`${styles.hoverRed}`}>
             @kolyakito
-          </a>
+          </Link>
         </p>
         <p>
           Edit & Color grade{' '}
-          <a href="" className={`${styles.hoverRed}`}>
+          <Link href="/" className={`${styles.hoverRed}`}>
             @Coziestone
-          </a>
+          </Link>
         </p>
         <p>
           Set Designer{' '}
-          <a href="" className={`${styles.hoverRed}`}>
+          <Link href="/" className={`${styles.hoverRed}`}>
             @van_duulga
-          </a>
+          </Link>
         </p>
         <p>
           Gaffer @ari_gn11{' '}
-          <a href="" className={`${styles.hoverRed}`}>
+          <Link href="/" className={`${styles.hoverRed}`}>
             @dulgnmrn
-          </a>{' '}
-          <a href="" className={`${styles.hoverRed}`}>
+          </Link>{' '}
+          <Link href="/" className={`${styles.hoverRed}`}>
             @pujefyd
-          </a>
+          </Link>
         </p>
       </div>
       <div
