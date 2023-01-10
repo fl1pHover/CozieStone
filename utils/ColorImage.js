@@ -1,4 +1,5 @@
 import { motion, useAnimation } from 'framer-motion';
+import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import styles from '../styles';
@@ -21,31 +22,34 @@ const ColorImage = ({ image, title, desc, index }) => {
   }, [control, inView]);
 
   return (
-    <motion.a
-      ref={ref}
-      href="/product"
-      variants={fadeIn('up', 'spring', 0, 0.8)}
-      // variants={boxVariant}
-      initial="hidden"
-      animate={control}
-      viewport={{ once: true }}
-      className="aspect-square relative group overflow-hidden"
-    >
-      <img
-        src={image}
-        alt="image 1"
-        className="w-full aspect absolute group-hover:scale-[1.1] duration-200"
-      />
-      <div
-        className={`${styles.absoluteCenter} ${styles.flexCenter} w-full h-full flex-col z-10 `}
+    <Link href="/product">
+      <motion.div
+        ref={ref}
+        variants={fadeIn('up', 'spring', 0, 0.8)}
+        // variants={boxVariant}
+        initial="hidden"
+        animate={control}
+        viewport={{ once: true }}
+        className="aspect-square relative group overflow-hidden"
       >
-        <h1 className="opacity-0 group-hover:opacity-100 duration-200">
-          {title}
-        </h1>
-        <p className="opacity-0 group-hover:opacity-100 duration-200">{desc}</p>
-      </div>
-      <div className="black__overlay group-hover:bg-primary-black opacity-50 absolute w-full h-full duration-200" />
-    </motion.a>
+        <img
+          src={image}
+          alt="image 1"
+          className="w-full aspect absolute group-hover:scale-[1.1] duration-200"
+        />
+        <div
+          className={`${styles.absoluteCenter} ${styles.flexCenter} w-full h-full flex-col z-10 `}
+        >
+          <h1 className="opacity-0 group-hover:opacity-100 duration-200">
+            {title}
+          </h1>
+          <p className="opacity-0 group-hover:opacity-100 duration-200">
+            {desc}
+          </p>
+        </div>
+        <div className="black__overlay group-hover:bg-primary-black opacity-50 absolute w-full h-full duration-200" />
+      </motion.div>{' '}
+    </Link>
   );
 };
 
