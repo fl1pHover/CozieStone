@@ -4,7 +4,7 @@ const styles = {
 
   paddings: 'sm:p-16 xs:p-8 px-6 py-12',
   yPaddings: 'sm:py-16 xs:py-8 py-12',
-  xPaddings: 'xs:px-10 sm:px-16 md:px-36 lg:px-60 px-2',
+  xPaddings: 'w-screen xs:px-10 sm:px-16 md:px-36 lg:px-60 px-2',
   topPaddings: 'sm:pt-16 xs:pt-8 pt-12',
   bottomPaddings: 'sm:pb-16 xs:pb-8 pb-12',
 

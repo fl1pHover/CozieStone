@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
       </Head>
       <MobileNav />
       <Navbar />
-      <main className="bg-black">{children}</main>
+      <main className="bg-black w-screen overflow-x-hidden">{children}</main>
       <ScrollTop />
       <Footer />
     </>

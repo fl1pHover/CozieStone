@@ -1,9 +1,12 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { navItems } from '../../constant';
 import styles from '../../styles';
 import { fadeIn, staggerContainer } from '../../utils/motion';
+
+import { usePathname } from 'next/navigation';
 
 const textVariant2 = {
   hidden: {
@@ -22,7 +25,8 @@ const textVariant2 = {
 };
 
 const Navbar = () => {
-  const { asPath } = useRouter();
+  // const { asPath } = useRouter();
+  const pathname = usePathname();
 
   return (
     <nav
@@ -42,7 +46,7 @@ const Navbar = () => {
         initial="hidden"
         animate="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`sm:${styles.flexCenter} hidden mt-3`}
+        className={`${styles.flexCenter} sm:flex hidden mt-3`}
       >
         {navItems?.map((navItem, index) => (
           <Link
@@ -52,7 +56,7 @@ const Navbar = () => {
             // transition={{ type: 'spring', stiffness: 100 }}
             href={navItem.href}
             className={`${
-              asPath === navItem.href
+              pathname === navItem.href
                 ? 'active text-vivid'
                 : `${styles.hoverRed} text-dimGrey`
             } px-[15px] w-full text-center`}

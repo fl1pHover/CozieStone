@@ -1,18 +1,20 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import { fadeIn } from '../../utils/motion';
 
 import { printImages } from '../../constant';
 
 const Oriental = () => {
+  const [layoutId, setLayoutId] = useState(null);
+
   return (
     <>
       {printImages.map((printImage, index) => (
         <Link href={'landscape/' + printImage.id} key={index}>
           <motion.div
             variants={fadeIn('up', ' ', index * 0.25, 0.5)}
-            layoutId={printImage}
+            layoutId={printImage.id}
           >
             <img
               src={'/images/oriental/' + printImage.image}
