@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       colors: {
         'primary-black': '#100D0D',
-        'hover-black': '#100d0d',
+        'hover-black': '#0a0a0a',
         white: '#ffffff',
         grey: '#a3a3a3',
         vivid: '#FF0000',
