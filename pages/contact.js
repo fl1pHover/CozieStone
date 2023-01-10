@@ -3,7 +3,9 @@ import styles from '../styles';
 
 const Contact = () => {
   return (
-    <div className={`${styles.flexCenter} flex-col my-[25vh] text-[30px]`}>
+    <div
+      className={`${styles.flexCenter} flex-col my-[25vh] sm:text-[25px] md:text-[30px]`}
+    >
       <a href="#" className="text-poop hover:text-[#333333]">
         + 7 702 532 44 20
       </a>

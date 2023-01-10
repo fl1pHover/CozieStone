@@ -25,11 +25,13 @@ const Navbar = () => {
   const { asPath } = useRouter();
 
   return (
-    <nav className={`${styles.flexCenter} flex-col uppercase my-3`}>
+    <nav
+      className={`${styles.flexCenter} relative flex-col uppercase sm:mt-3 sm:0 z-10`}
+    >
       <h1
         animate={{ x: 100 }}
         transition={{ type: 'spring', stiffness: 100 }}
-        className={`${styles.heroHeading}`}
+        className={`${styles.heroHeading} p-[30px] sm:p-0 `}
       >
         <Link href="/" className={`${styles.hoverRed}`}>
           CozieStone
@@ -53,7 +55,7 @@ const Navbar = () => {
               asPath === navItem.href
                 ? 'active text-vivid'
                 : `${styles.hoverRed} text-dimGrey`
-            } px-[15px]`}
+            } px-[15px] w-full text-center`}
           >
             {navItem.item}
           </Link>

@@ -9,7 +9,7 @@ const styles = {
   bottomPaddings: 'sm:pb-16 xs:pb-8 pb-12',
 
   flexCenter: 'flex justify-center items-center',
-flexStart: 'flex justify-start items-start',
+  flexStart: 'flex justify-start items-start',
   flexBetween: 'flex justify-between w-full',
   flexEnd: 'flex justify-end',
   navPadding: 'pt-[50px]',
@@ -25,6 +25,10 @@ flexStart: 'flex justify-start items-start',
   subTitle:
     'font-bold lg:text-[24px] md:text-[22px] sm:text-[20px] text-[18px]',
   hoverRed: 'hover:text-vivid duration-300',
+
+  // utils
+  options:
+    'fixed sm:bottom-[40px] sm:left-[40px] md:bottom-[75px] md:left-[75px] bottom-[35%] left-[15px] sm:bg-vivid text-[12px] sm:text-[16px] rounded-full uppercase sm:p-10 p-0 sm:text-black  text-white  font-bold',
 };
 
 export default styles;

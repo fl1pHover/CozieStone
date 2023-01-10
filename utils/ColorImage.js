@@ -8,8 +8,6 @@ import { fadeIn } from './motion';
 //   hidden: { opacity: 0, scale: 0 },
 // };
 
-
-
 const ColorImage = ({ image, title, desc, index }) => {
   const control = useAnimation();
   const [ref, inView] = useInView({ threshold: 0, triggerOnce: true });

@@ -5,19 +5,19 @@ export const navItems = [
   },
   {
     item: 'Directed',
-    href: 'directed',
+    href: '/directed',
   },
   {
     item: 'landscape',
-    href: 'landscape',
+    href: '/landscape',
   },
   {
     item: 'prints',
-    href: 'prints',
+    href: '/prints',
   },
   {
     item: 'contact',
-    href: 'contact',
+    href: '/contact',
   },
 ];
 
