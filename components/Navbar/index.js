@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { navItems } from '../constant';
-import styles from '../styles';
-import { fadeIn, staggerContainer } from '../utils/motion';
+import { navItems } from '../../constant';
+import styles from '../../styles';
+import { fadeIn, staggerContainer } from '../../utils/motion';
 
 const textVariant2 = {
   hidden: {
@@ -40,12 +40,12 @@ const Navbar = () => {
         initial="hidden"
         animate="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.flexCenter} mt-3`}
+        className={`sm:${styles.flexCenter} hidden mt-3`}
       >
         {navItems?.map((navItem, index) => (
           <Link
             key={index}
-            variants={fadeIn('left', 'Tween', index * 0.2)}
+            variants={fadeIn('left', 'Tween', index * 0.2, 0.5)}
             // animate={{ x: 100 }}
             // transition={{ type: 'spring', stiffness: 100 }}
             href={navItem.href}

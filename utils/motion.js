@@ -26,6 +26,7 @@ export const slideIn = (direction, type, delay, duration) => ({
   },
   show: {
     x: 0,
+
     y: 0,
     transition: {
       type,
@@ -90,8 +91,8 @@ export const textVariant2 = {
 
 export const fadeIn = (direction, type, delay, duration) => ({
   hidden: {
-    x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
-    y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
+    x: direction === 'left' ? 50 : direction === 'right' ? -50 : 0,
+    y: direction === 'up' ? 50 : direction === 'down' ? -50 : 0,
     opacity: 0,
   },
   show: {
@@ -102,7 +103,23 @@ export const fadeIn = (direction, type, delay, duration) => ({
       type,
       delay,
       duration,
-      ease: 'easeIn',
+      ease: 'linear',
+    },
+  },
+});
+
+export const fadeBottom = () => ({
+  hidden: {
+    y: 50,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: 'tween',
+      duration: 0.8,
+      ease: 'linear',
     },
   },
 });

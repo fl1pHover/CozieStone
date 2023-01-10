@@ -11,6 +11,15 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.expand {
+  animation: expand 0.5s ease;
+}
+
+
 a {
   transition: 0.3s ease;
 }
@@ -23,6 +32,14 @@ body {
   @apply text-poop hover:text-[#333333];
 }
 
+.up__icon {
+  color: white;
+
+  position: fixed;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+}
 .footer__icon {
   @apply hover:text-vivid text-[20px];
   transition: 0.3s ease;

@@ -21,19 +21,13 @@ const Options = () => {
 };
 
 export default function Home() {
-  const [isInView, setIsInView] = useState(false);
   const [content, setContent] = useState('All');
+
   return (
     <motion.div
       variants={staggerContainer}
       initial="hidden"
-      whileInView={() => {
-        // when element in viewport , set IsInView true!
-        setIsInView(true);
-        return {};
-      }}
       animate="show"
-      viewport={{ once: false, amount: 0.25 }}
       className="grid grid-cols-3 my-8"
     >
       {content === 'All' &&

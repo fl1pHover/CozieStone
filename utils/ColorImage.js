@@ -1,13 +1,36 @@
-import { motion } from 'framer-motion';
-import React from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 import styles from '../styles';
 import { fadeIn } from './motion';
+// const boxVariant = {
+//   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+//   hidden: { opacity: 0, scale: 0 },
+// };
+
+
 
 const ColorImage = ({ image, title, desc, index }) => {
+  const control = useAnimation();
+  const [ref, inView] = useInView({ threshold: 0, triggerOnce: true });
+
+  useEffect(() => {
+    if (inView) {
+      control.start('show');
+    } else {
+      control.start('hidden');
+    }
+  }, [control, inView]);
+
   return (
     <motion.a
+      ref={ref}
       href="/product"
-      variants={fadeIn('up', ' ', index * 0.25, 0.5)}
+      variants={fadeIn('up', 'spring', 0, 0.8)}
+      // variants={boxVariant}
+      initial="hidden"
+      animate={control}
+      viewport={{ once: true }}
       className="aspect-square relative group overflow-hidden"
     >
       <img
