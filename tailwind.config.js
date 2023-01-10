@@ -15,9 +15,11 @@ module.exports = {
         'hover-black': '#0a0a0a',
         white: '#ffffff',
         grey: '#a3a3a3',
+        darkGrey: '#262626',
         vivid: '#FF0000',
         dimGrey: '#777777',
         poop: '#aa8c46',
+        orange: '#FFA800',
       },
       transitionTimingFunction: {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',

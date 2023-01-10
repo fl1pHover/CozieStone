@@ -47,7 +47,7 @@ const MobileNav = () => {
               href={navItem.href}
               className={`${
                 asPath === navItem.href
-                  ? 'active text-vivid'
+                  ? 'text-vivid'
                   : `${styles.hoverRed} text-dimGrey`
               } px-[15px] w-full text-center uppercase py-3`}
             >

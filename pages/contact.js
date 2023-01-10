@@ -10,7 +10,7 @@ const Contact = () => {
         + 7 702 532 44 20
       </a>
       <div className="flex gap-[5px]">
-        <a href="#" className="poop__text">
+        <a href="e.tanaev@gmail.com" className="poop__text">
           e.tanaev@gmail.com
         </a>
         <p> | </p>

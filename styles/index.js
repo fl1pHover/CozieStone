@@ -4,7 +4,7 @@ const styles = {
 
   paddings: 'sm:p-16 xs:p-8 px-6 py-12',
   yPaddings: 'sm:py-16 xs:py-8 py-12',
-  xPaddings: 'w-screen xs:px-10 sm:px-16 md:px-36 lg:px-60 px-2',
+  xPaddings: 'w-screen xs:px-10 sm:px-16 md:px-36 lg:px-60 px-3',
   topPaddings: 'sm:pt-16 xs:pt-8 pt-12',
   bottomPaddings: 'sm:pb-16 xs:pb-8 pb-12',
 
@@ -29,6 +29,8 @@ const styles = {
   // utils
   options:
     'fixed sm:bottom-[40px] sm:left-[40px] md:bottom-[75px] md:left-[75px] bottom-[35%] left-[15px] sm:bg-vivid text-[12px] sm:text-[16px] rounded-full uppercase sm:p-10 p-0 sm:text-black  text-white  font-bold',
+
+  sizeButton: 'px-6 py-1 rounded-[5px] bg-darkGrey font-normal',
 };
 
 export default styles;
