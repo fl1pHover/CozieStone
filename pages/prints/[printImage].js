@@ -27,11 +27,19 @@ const PrintScreen = () => {
         <div>
           <p className="font-normal">Select canvas size</p>
           <div className="grid xs:grid-cols-4 sm:grid-cols-2 md:grid-cols-4 grid-cols-2 gap-2 md:gap-5 text-[13px] sm:text-[16px] lg:text-[20px] mt-1">
-            <button className={`${styles.sizeButton}`}>24" x 10"</button>
-            <button className={`${styles.sizeButton}`}>24" x 10"</button>
+            <button className={`${styles.sizeButton}`}>
+              24&quot; x 10&quot;
+            </button>
+            <button className={`${styles.sizeButton}`}>
+              24&quot; x 10&quot;&quot;
+            </button>
 
-            <button className={`${styles.sizeButton}`}>24" x 10"</button>
-            <button className={`${styles.sizeButton}`}>24" x 10"</button>
+            <button className={`${styles.sizeButton}`}>
+              24&quot; x 10&quot;
+            </button>
+            <button className={`${styles.sizeButton}`}>
+              24&quot; x 10&quot;
+            </button>
           </div>
         </div>
         <button className="bg-orange bg-opacity-70 sm:mt-20 mt-10 px-20 rounded-[5px] py-2 tracking-wide font-normal uppercase inline-block w-full sm:w-auto">
